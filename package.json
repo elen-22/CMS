@@ -1,0 +1,16 @@
+{
+  "name": "node_cms_project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Elen",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "nodemon": "^3.1.9"
+  }
+}

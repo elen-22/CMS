@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+
+}
+
+.container {
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px lightblue;
+}
+
+/* no dots next to the list */
+ul {
+    list-style: none; 
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin: 10px auto; 
+    /* up and down, left and right  */
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    cursor: pointer;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 8px;
+}
+
+#title, #content, h1, h2,p{
+    margin-top:10px;
+}
+
+#title, #content{
+   padding: 10px; 
+   width:80%;
+   font-size: 18px;
+}

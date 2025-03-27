@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Management System</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="headerDiv">
+            <h1>Blog Management System</h1>
+            <p>Write and manage your blog posts</p>
+        </div>
+        <div class="bodyDiv">
+            <h2>Blog Posts</h2>
+            <ul id="postList"></ul>
+        </div>
+        <div class="bodyDiv">
+            <h2> ➕ Add New Post</h2>
+            <form id="postForm">
+                <input type="text" id="title" placeholder="Post Title" required>
+                <br>
+                <textarea id="content" placeholder="Write something..." required></textarea>
+                <br>
+                <button type="submit">Publish</button>
+            </form>
+        </div>
+
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
