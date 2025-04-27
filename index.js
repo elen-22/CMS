@@ -22,7 +22,7 @@ function addPost(title, content) {
             return fs.promises.writeFile(postsPath, JSON.stringify(posts, null, 2));
         })
         .then(() => console.log(`Post added: ${title}`))
-        .catch(err => console.error(err.message));
+        .catch(err => console.log(err.message));
 }
 
 function viewPosts(res) {
@@ -35,7 +35,7 @@ function viewPosts(res) {
         .catch(err => {
             res.writeHead(500, { "Content-Type": "text/plain" });
             res.end("Server Error");
-            console.error(err);
+            console.log(err);
         });
 }
 
@@ -110,6 +110,7 @@ const server = http.createServer((req, res) => {
     else if (req.method === "DELETE" && req.url.startsWith("/delete-post")) {
         //This extracts the id query parameter from the request URL.
         const id = new URL(req.url, `http://${req.headers.host}`).searchParams.get("id");
+        console.log(typeof id)
         if (!id) {
             res.writeHead(400, { "Content-Type": "text/plain" });
             res.end("Invalid request: Missing post ID");

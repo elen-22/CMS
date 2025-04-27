@@ -39,7 +39,7 @@ function loadPosts() {
     fetch("/posts")
         .then(res => res.json())
         .then(posts => {
-            //ternary operator
+            console.log(posts)
             postList.innerHTML = posts.length
                 ? posts.map(post =>
                     `<li>
